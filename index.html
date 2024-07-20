@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icons8-time-50.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Timer Pomodoro</h1>
+    </header>
+    <br><br><br>
+    <div id="container">
+        <section id="pomodoro">
+            <input type="text" id="task-name" placeholder="Nombre de la tarea" />
+            <div id="time">25:00</div>
+            <div id="controls">
+                <button id="start-btn" title="Iniciar"><i class="fas fa-play"></i></button>
+                <button id="pause-btn" disabled title="Pausar"><i class="fas fa-pause"></i></button>
+                <button id="stop-btn" disabled title="Detener"><i class="fas fa-stop"></i></button>
+                <button id="next-btn" disabled title="Siguiente Ciclo"><i class="fas fa-step-forward"></i></button>
+                <button id="reset-history-btn" title="Resetear Historial"><i class="fas fa-history"></i></button>
+            </div>
+        </section>
+        <br>
+        <ul id="history-list"></ul>
+    </div>
+
+    <footer id="footer">
+        <p>© 2024 Pomodoro App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
